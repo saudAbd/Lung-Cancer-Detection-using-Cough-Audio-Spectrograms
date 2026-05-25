@@ -1,9 +1,11 @@
 torch
 torchvision
-torchaudio
-pandas
+timm
+transformers
+peft
 numpy
+pandas
 matplotlib
 scikit-learn
 librosa
-tqdm
+evaluate

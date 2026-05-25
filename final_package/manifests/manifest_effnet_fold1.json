@@ -1,0 +1,44 @@
+{
+  "model": "EfficientNet-B0",
+  "fold": 1,
+  "paths": {
+    "checkpoint": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_1/effnet_fold1/checkpoints/efficientnet_b0_fold1_best.pt",
+    "predictions_csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_1/effnet_fold1/predictions/effnet_fold1_val_test_predictions.csv"
+  },
+  "tau_star": 0.0,
+  "policy": "maxF1",
+  "val": {
+    "acc": 0.6,
+    "prec": 0.6,
+    "rec": 1.0,
+    "f1": 0.75,
+    "auc": 0.6666666666666666,
+    "cm": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "test": {
+    "acc": 0.5454545454545454,
+    "prec": 0.5454545454545454,
+    "rec": 1.0,
+    "f1": 0.7058823529411765,
+    "auc": 0.3666666666666667,
+    "cm": [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ]
+    ]
+  }
+}

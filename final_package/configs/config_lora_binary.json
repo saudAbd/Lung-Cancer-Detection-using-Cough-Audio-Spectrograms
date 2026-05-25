@@ -1,0 +1,40 @@
+{
+  "date": "2025-08-21T22:04:28.564630Z",
+  "dataset": "CSI (Kaggle), classes: normal vs lung_cancer",
+  "n_samples": 35,
+  "class_counts": {
+    "normal": 20,
+    "lung_cancer": 15
+  },
+  "lora": {
+    "rank": 4,
+    "alpha": 1.0,
+    "stages": [
+      "layer3",
+      "layer4"
+    ]
+  },
+  "training": {
+    "epochs": 12,
+    "patience": 4,
+    "batch_size": 8,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.01
+  },
+  "cv": {
+    "n_splits": 5,
+    "n_repeats": 5,
+    "inner_val": 0.2,
+    "thresholding": "per-fold max-F1"
+  },
+  "augs": [
+    "RandomResizedCrop(0.85-1.0)",
+    "RandomAffine(\u00b17\u00b0,\u00b13% tx)",
+    "ColorJitter(\u00b10.2)",
+    "GaussianBlur",
+    "SpecMask(time/freq)",
+    "RandomErasing(1\u20135%)",
+    "Imagenet mean/std"
+  ]
+}

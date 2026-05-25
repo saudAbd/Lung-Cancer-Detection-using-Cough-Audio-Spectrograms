@@ -1,0 +1,45 @@
+{
+  "model": "EfficientNet-B0 (ImageNet init)",
+  "fold": 2,
+  "policy": "prec>=0.98",
+  "tau_star": 0.671,
+  "paths": {
+    "checkpoint": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_2/effnet_fold2_imagenet/checkpoints/efficientnet_b0_fold2_imagenet_best.pt",
+    "predictions_csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_2/effnet_fold2_imagenet/predictions/effnet_fold2_imagenet_val_test_predictions.csv",
+    "tau_file": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_2/effnet_fold2_imagenet/reports/operating_threshold.txt"
+  },
+  "val": {
+    "acc": 1.0,
+    "prec": 1.0,
+    "rec": 1.0,
+    "f1": 1.0,
+    "auc": 1.0,
+    "cm": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "test": {
+    "acc": 0.9090909090909091,
+    "prec": 0.8571428571428571,
+    "rec": 1.0,
+    "f1": 0.9230769230769231,
+    "auc": 1.0,
+    "cm": [
+      [
+        4,
+        1
+      ],
+      [
+        0,
+        6
+      ]
+    ]
+  }
+}

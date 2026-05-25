@@ -1,0 +1,2 @@
+0.998690
+chosen='prec>=0.98' via unique-probability search on VAL

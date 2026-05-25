@@ -1,0 +1,10 @@
+{
+  "label2id": {
+    "healthy": 0,
+    "cancer": 1
+  },
+  "id2label": {
+    "0": "healthy",
+    "1": "cancer"
+  }
+}

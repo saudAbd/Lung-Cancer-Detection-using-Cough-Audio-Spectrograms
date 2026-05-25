@@ -1,0 +1,45 @@
+{
+  "model": "ResNet-18",
+  "tau_star": 0.9999260902404785,
+  "paths": {
+    "checkpoint": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/LOSO/Cough_Audio_Coswera/resnet18/checkpoints/resnet18_best.pt",
+    "predictions_csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/LOSO/Cough_Audio_Coswera/resnet18/predictions/resnet18_val_test_predictions.csv",
+    "tau_file": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/LOSO/Cough_Audio_Coswera/resnet18/reports/operating_threshold.txt"
+  },
+  "val_at_tau": {
+    "acc": 0.9647058823529412,
+    "prec": 1.0,
+    "rec": 0.25,
+    "f1": 0.4,
+    "auc": 1.0,
+    "cm": [
+      [
+        81,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "tau": 0.9999260902404785
+  },
+  "test_at_tau": {
+    "acc": 0.9894366197183099,
+    "prec": 0.0,
+    "rec": 0.0,
+    "f1": 0.0,
+    "auc": 1.0,
+    "cm": [
+      [
+        281,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "tau": 0.9999260902404785
+  }
+}

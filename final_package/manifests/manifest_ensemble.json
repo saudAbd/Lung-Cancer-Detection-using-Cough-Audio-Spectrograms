@@ -1,0 +1,56 @@
+{
+  "ensemble": {
+    "members": [
+      "resnet",
+      "vit",
+      "effnet"
+    ],
+    "aggregator": "mean",
+    "tau_star": 0.9999019833333334,
+    "tau_policy": "prec>=0.98 (rc\u22650.50, tp\u22652)",
+    "settings": {
+      "TARGET_PREC": 0.98,
+      "MIN_RECALL": 0.5,
+      "MIN_TP": 2,
+      "TAU_CAP": 0.99999
+    },
+    "paths": {
+      "predictions_csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Ensemble/predictions/ensemble_val_test_predictions.csv",
+      "tau_txt": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Ensemble/reports/operating_threshold.txt"
+    },
+    "val_metrics_at_tau": {
+      "acc": 0.995945945945946,
+      "prec": 1.0,
+      "rec": 0.5,
+      "f1": 0.6666666666666666,
+      "auc": 1.0,
+      "cm": [
+        [
+          734,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "test_metrics_at_tau": {
+      "acc": 0.9945945945945946,
+      "prec": 1.0,
+      "rec": 0.3333333333333333,
+      "f1": 0.5,
+      "auc": 1.0,
+      "cm": [
+        [
+          367,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    }
+  }
+}

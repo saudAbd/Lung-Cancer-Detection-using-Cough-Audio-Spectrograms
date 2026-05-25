@@ -1,0 +1,47 @@
+{
+  "model": "EfficientNet-B0",
+  "paths": {
+    "checkpoint": "//workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/EffNet-Model/checkpoints/efficientnet_b0_best.pt",
+    "predictions_csv": "//workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/EffNet-Model/predictions/efficientnet_b0_val_test_predictions.csv",
+    "operating_threshold_txt": "//workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/EffNet-Model/reports/operating_threshold.txt"
+  },
+  "tau_star": 0.99869,
+  "metrics": {
+    "val": {
+      "acc": 1.0,
+      "prec": 1.0,
+      "rec": 1.0,
+      "f1": 1.0,
+      "auc": 1.0,
+      "cm": [
+        [
+          734,
+          0
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "tau": 0.99869
+    },
+    "test": {
+      "acc": 1.0,
+      "prec": 1.0,
+      "rec": 1.0,
+      "f1": 1.0,
+      "auc": 1.0,
+      "cm": [
+        [
+          367,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "tau": 0.99869
+    }
+  }
+}
