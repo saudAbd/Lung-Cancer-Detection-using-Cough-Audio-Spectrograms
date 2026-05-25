@@ -1,8 +1,8 @@
-# Cough-Based Lung Cancer Detection from Cough Spectrograms
+# Cough-Based Lung Cancer Detection: A Data-Centric Investigation of Harmonisation, Localisation, and Cross-Source Generalisation
 
 This repository accompanies my MSc Artificial Intelligence dissertation:
 
-**Cough-Based Lung Cancer Detection: A Data-Centric Investigation of Harmonisation, Localisation, and Cross-Source Generalisation**
+
 
 The project investigates whether cough-derived spectrograms can support lung cancer detection under realistic public-data conditions. The main focus is not only model performance, but whether the results remain trustworthy after controlling for dataset leakage, source-specific artefacts, class imbalance, and cross-source generalisation.
 
