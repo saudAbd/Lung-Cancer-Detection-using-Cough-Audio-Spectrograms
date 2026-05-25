@@ -1,0 +1,6 @@
+fold,train_n,val_n,test_n,train_cancer,train_healthy,val_cancer,val_healthy,test_cancer,test_healthy
+1,38,5,11,21,17,3,2,6,5
+2,38,5,11,21,17,3,2,6,5
+3,38,5,11,21,17,3,2,6,5
+4,38,5,11,21,17,3,2,6,5
+5,39,5,10,21,18,3,2,6,4

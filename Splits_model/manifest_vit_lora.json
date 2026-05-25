@@ -1,0 +1,45 @@
+{
+  "model": "ViT-B16-MLP-LoRA",
+  "tau_star": 0.9998096823692322,
+  "paths": {
+    "checkpoint": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/LOSO/Cough_Audio_Coswera/vit_lora/checkpoints/vit_lora_best.pt",
+    "predictions_csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/LOSO/Cough_Audio_Coswera/vit_lora/predictions/vit_lora_val_test_predictions.csv",
+    "tau_file": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/LOSO/Cough_Audio_Coswera/vit_lora/reports/operating_threshold.txt"
+  },
+  "val_at_tau": {
+    "acc": 0.9647058823529412,
+    "prec": 1.0,
+    "rec": 0.25,
+    "f1": 0.4,
+    "auc": 1.0,
+    "cm": [
+      [
+        81,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "tau": 0.9998096823692322
+  },
+  "test_at_tau": {
+    "acc": 0.9929577464788732,
+    "prec": 1.0,
+    "rec": 0.3333333333333333,
+    "f1": 0.5,
+    "auc": 1.0,
+    "cm": [
+      [
+        281,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "tau": 0.9998096823692322
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "per_fold": {
+    "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_1/effnet_fold1_imagenet": {
+      "csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_1/effnet_fold1_imagenet/predictions/effnet_fold1_imagenet_val_test_predictions.csv",
+      "ckpt": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_1/effnet_fold1_imagenet/checkpoints/efficientnet_b0_fold1_imagenet_best.pt",
+      "coef": 0.4240114673168028,
+      "intercept": 0.3325884126683582,
+      "tau": 0.604343,
+      "policy": {
+        "policy": "prec>=0.98",
+        "prec": 1.0,
+        "rec": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "val": {
+        "acc": 0.8,
+        "prec": 1.0,
+        "rec": 0.6666666666666666,
+        "f1": 0.8,
+        "auc": 0.8333333333333333,
+        "cm": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "tau": 0.604343
+      },
+      "test": {
+        "acc": 0.7272727272727273,
+        "prec": 0.8,
+        "rec": 0.6666666666666666,
+        "f1": 0.7272727272727273,
+        "auc": 0.8,
+        "cm": [
+          [
+            4,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "tau": 0.604343
+      },
+      "counts": {
+        "val": 5,
+        "test": 11
+      }
+    },
+    "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_2/effnet_fold2_imagenet": {
+      "csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_2/effnet_fold2_imagenet/predictions/effnet_fold2_imagenet_val_test_predictions.csv",
+      "ckpt": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_2/effnet_fold2_imagenet/checkpoints/efficientnet_b0_fold2_imagenet_best.pt",
+      "coef": 0.7674712515723074,
+      "intercept": -0.3685195992010809,
+      "tau": 0.615,
+      "policy": {
+        "policy": "prec>=0.98",
+        "prec": 1.0,
+        "rec": 1.0,
+        "f1": 1.0
+      },
+      "val": {
+        "acc": 1.0,
+        "prec": 1.0,
+        "rec": 1.0,
+        "f1": 1.0,
+        "auc": 1.0,
+        "cm": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "tau": 0.615
+      },
+      "test": {
+        "acc": 0.7272727272727273,
+        "prec": 0.8,
+        "rec": 0.6666666666666666,
+        "f1": 0.7272727272727273,
+        "auc": 0.8333333333333334,
+        "cm": [
+          [
+            4,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "tau": 0.615
+      },
+      "counts": {
+        "val": 5,
+        "test": 11
+      }
+    },
+    "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_3/effnet_fold2_imagenet": {
+      "csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_3/effnet_fold2_imagenet/predictions/effnet_fold2_imagenet_val_test_predictions.csv",
+      "ckpt": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_3/effnet_fold2_imagenet/checkpoints/efficientnet_b0_fold2_imagenet_best.pt",
+      "coef": 0.9431029680926939,
+      "intercept": -0.19733520684401187,
+      "tau": 0.47500000000000003,
+      "policy": {
+        "policy": "prec>=0.98",
+        "prec": 1.0,
+        "rec": 1.0,
+        "f1": 1.0
+      },
+      "val": {
+        "acc": 1.0,
+        "prec": 1.0,
+        "rec": 1.0,
+        "f1": 1.0,
+        "auc": 1.0,
+        "cm": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "tau": 0.47500000000000003
+      },
+      "test": {
+        "acc": 0.7272727272727273,
+        "prec": 0.6666666666666666,
+        "rec": 1.0,
+        "f1": 0.8,
+        "auc": 1.0,
+        "cm": [
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "tau": 0.47500000000000003
+      },
+      "counts": {
+        "val": 5,
+        "test": 11
+      }
+    },
+    "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_4/effnet_fold2_imagenet": {
+      "csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_4/effnet_fold2_imagenet/predictions/effnet_fold2_imagenet_val_test_predictions.csv",
+      "ckpt": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_4/effnet_fold2_imagenet/checkpoints/efficientnet_b0_fold2_imagenet_best.pt",
+      "coef": 0.36496630588641105,
+      "intercept": 0.0802818291685471,
+      "tau": 0.61,
+      "policy": {
+        "policy": "prec>=0.98",
+        "prec": 1.0,
+        "rec": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "val": {
+        "acc": 0.8,
+        "prec": 1.0,
+        "rec": 0.6666666666666666,
+        "f1": 0.8,
+        "auc": 0.8333333333333333,
+        "cm": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "tau": 0.61
+      },
+      "test": {
+        "acc": 0.8181818181818182,
+        "prec": 1.0,
+        "rec": 0.6666666666666666,
+        "f1": 0.8,
+        "auc": 1.0,
+        "cm": [
+          [
+            5,
+            0
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "tau": 0.61
+      },
+      "counts": {
+        "val": 5,
+        "test": 11
+      }
+    },
+    "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_5/effnet_fold2_imagenet": {
+      "csv": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_5/effnet_fold2_imagenet/predictions/effnet_fold2_imagenet_val_test_predictions.csv",
+      "ckpt": "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/Kaggle_CV/fold_5/effnet_fold2_imagenet/checkpoints/efficientnet_b0_fold2_imagenet_best.pt",
+      "coef": 0.8394054465639388,
+      "intercept": 0.4458104857755411,
+      "tau": 0.505,
+      "policy": {
+        "policy": "prec>=0.98",
+        "prec": 1.0,
+        "rec": 1.0,
+        "f1": 1.0
+      },
+      "val": {
+        "acc": 1.0,
+        "prec": 1.0,
+        "rec": 1.0,
+        "f1": 1.0,
+        "auc": 1.0,
+        "cm": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "tau": 0.505
+      },
+      "test": {
+        "acc": 0.6,
+        "prec": 0.6,
+        "rec": 1.0,
+        "f1": 0.75,
+        "auc": 0.5833333333333334,
+        "cm": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "tau": 0.505
+      },
+      "counts": {
+        "val": 5,
+        "test": 10
+      }
+    }
+  },
+  "pooled_test": {
+    "acc": 0.7222222222222222,
+    "prec": 0.7272727272727273,
+    "rec": 0.8,
+    "f1": 0.7619047619047619,
+    "auc": 0.8569444444444444,
+    "cm": [
+      [
+        15,
+        9
+      ],
+      [
+        6,
+        24
+      ]
+    ]
+  }
+}
