@@ -18,13 +18,10 @@ The working dataset contained approximately **3,700 spectrogram images**, includ
 
 ---
 
-## Suggested Main Figure
+## Main Figures
 
-Add **Figure 4** from the dissertation here:
+<img width="932" height="376" alt="image" src="https://github.com/user-attachments/assets/95dd1c8a-7b58-48f8-a62a-77a16004597e" />
 
-![System Overview](docs/images/system_overview.png)
-
-Figure 4 shows the overall system design. Harmonisation and de-duplication feed two analysis branches: a supervised modelling branch and a healthy-only anomaly detection branch.
 
 ---
 
@@ -46,11 +43,10 @@ The project has four main methodological components:
 
 ---
 
-## Suggested Harmonisation Figure
+##  Harmonisation Figure
 
-Add **Figure 2** from the dissertation here:
+<img width="955" height="483" alt="image" src="https://github.com/user-attachments/assets/92dbf4f6-bb1c-4f11-960f-10a567ff77c4" />
 
-![Before and After Harmonisation](docs/images/harmonisation_example.png)
 
 This figure is important because it visually shows the central data problem: models can exploit visual differences between dataset sources unless spectrograms are harmonised.
 
@@ -68,32 +64,21 @@ The Kaggle-only LoRA experiment achieved **ROC-AUC = 0.867**, **PR-AUC = 0.877**
 
 ---
 
-## Suggested Result Figures
+## Result Figures
+**Kaggle-only LoRA summary**
 
-Add **Figure 12** and **Figure 11** from the dissertation here:
+<img width="702" height="462" alt="image" src="https://github.com/user-attachments/assets/87234eec-ce2b-4b8f-8c56-d01baeb785ed" />
+<img width="605" height="419" alt="image" src="https://github.com/user-attachments/assets/d27df24b-ff1e-4e51-9883-55f9820ba146" />
 
-![Kaggle LoRA Summary](docs/images/kaggle_lora_summary.png)
 
-![Kaggle LoRA Confusion Matrix](docs/images/kaggle_lora_confusion_matrix.png)
+ **LOSO performance**
 
-Add **Figure 14** or **Figure 15** for LOSO performance:
+<img width="677" height="509" alt="image" src="https://github.com/user-attachments/assets/95125cac-8213-433a-946a-02a75fa661d2" />
+<img width="813" height="514" alt="image" src="https://github.com/user-attachments/assets/0f02b435-e665-4460-8614-1f5d67f4a1a8" />
 
-![LOSO ROC Curve](docs/images/loso_roc_curve.png)
+**Aggregation × inversion audit**
+<img width="875" height="429" alt="image" src="https://github.com/user-attachments/assets/3c30b506-e593-4862-909e-0fce98a6b5ac" />
 
-![LOSO Mean-Inverted Summary](docs/images/loso_mean_inverted_summary.png)
-
-Optional additional technical figure:
-
-![Aggregation Inversion Audit](docs/images/aggregation_inversion_audit.png)
-
-Recommended figures to add:
-
-- **Figure 4**: System overview
-- **Figure 2**: Before-after harmonisation
-- **Figure 12**: Kaggle-only LoRA summary
-- **Figure 11**: Kaggle-only LoRA confusion matrix
-- **Figure 14 or Figure 15**: LOSO ROC / mean-inverted summary
-- **Figure 17**: Aggregation × inversion audit
 
 ---
 
@@ -177,9 +162,16 @@ Users should download the original public datasets from their official sources b
 
 Datasets used in the project:
 
-- Coswara
-- COUGHVID
-- Kaggle CSI / Chest Diseases Cough Sounds
+- **Coswara**: respiratory sounds and symptom data, including cough recordings.  
+  Link: https://github.com/iiscleap/Coswara-Data
+
+- **COUGHVID**: large-scale crowdsourced cough audio dataset.  
+  Link: https://www.epfl.ch/labs/esl/index-html/datasets/coughviddataset/
+
+- **Kaggle CSI / Chest Diseases by Medical Imaging and Cough Sounds**: source of lung-cancer and normal cough spectral images used in the project.  
+  Link: https://www.kaggle.com/datasets/sujaykapadnis/chest-diseases-by-medical-imaging-and-cough-sounds
+
+Please check and follow the licence, citation, and access requirements of each dataset provider before reuse.
 
 ---
 
@@ -196,17 +188,29 @@ This repository is a research artefact, not a clinical deployment system. The ke
 
 ---
 
+## Contributions
+
+This dissertation makes the following contributions:
+
+- built a canonical metadata index for heterogeneous cough spectrogram data;
+- identified and documented shortcut-learning risk caused by source-specific visual fingerprints;
+- implemented a harmonisation and de-duplication workflow to reduce leakage and visual confounding;
+- compared within-source supervised learning with cross-source LOSO evaluation;
+- evaluated ResNet, EfficientNet, ViT-LoRA, ensemble outputs, and healthy-only anomaly detection;
+- demonstrated that LoRA can improve within-source discrimination under small-data conditions;
+- implemented a cough-localisation and Mahalanobis-distance anomaly pipeline for cross-source testing;
+- reported negative results, including weak multiclass performance and CORAL alignment collapse, to avoid overclaiming;
+- packaged metadata, split files, prediction tables, manifests, thresholds, and notebooks for reproducibility.
+
+---
+
 ## Main Conclusion
 
 The main conclusion is that the binding constraint is **data quality and source generalisation**, not model architecture. Within a single source, ViT-LoRA can achieve useful discrimination, but cross-source evaluation shows that public cough datasets remain too fragile for strong clinical claims.
 
-The project contributes a reproducible harmonisation, evaluation, and anomaly-detection framework for future cough-based screening research.
+My main contribution was to move the project away from misleading high accuracy produced by source artefacts and toward a more rigorous, auditable evaluation framework. The final repository provides a reproducible package for harmonisation, metadata auditing, within-source modelling, LOSO anomaly detection, and transparent reporting of both positive and negative results.
 
----
-
-## Citation
-
-Abdullah, S. (2025). *Cough-Based Lung Cancer Detection: A Data-Centric Investigation of Harmonisation, Localisation, and Cross-Source Generalisation*. MSc Artificial Intelligence Dissertation, University of Lincoln.
+This work should therefore be interpreted as a data-centric feasibility study and reproducibility package for future cough-based screening research, rather than as a clinically deployable lung cancer detector.
 
 ---
 
